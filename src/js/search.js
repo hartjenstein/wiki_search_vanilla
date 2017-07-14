@@ -1,6 +1,6 @@
-
+window.location.href = "http://localhost:3000/?#search";
 function getResults(){
-
+  //  window.location.href = "http://localhost:3000/?#search";
     $.ajax({
         url: "https://en.wikipedia.org/w/api.php?action=opensearch&search="+getSearchTerm()+"&limit=10&namespace=0&format=json",
         dataType: "jsonp",
@@ -33,6 +33,7 @@ function fireEvents() {
 };
 function searchEvents(){
     getSearchTerm();
+    console.log(getResults())
     getResults();
 }
 function getRandomArticle() {
@@ -40,6 +41,7 @@ function getRandomArticle() {
 };
 
 function getSearchTerm() {
+    console.log(document.getElementById("search-input").value)
     return document.getElementById("search-input").value;
 }
 
