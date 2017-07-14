@@ -1,6 +1,6 @@
 
 // window.location.href = "http://localhost:3000/?#search";
-window.location.href = "http://hartjenstein.github.io/wiki_search_vanilla?#search";
+//indow.location.href = "https://hartjenstein.github.io/wiki_search_vanilla?#search";
 function getResults(){
   //  window.location.href = "http://localhost:3000/?#search";
     $.ajax({
