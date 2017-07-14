@@ -2,9 +2,12 @@
         padding: 0px;
         background: black;
     }
-
+    #random-search {
+        margin-left: 50px;
+    }
     #search {
         padding-top: 60px;
+        padding-right: 80px;
     }
 
     div#content-box {
@@ -12,6 +15,7 @@
         margin: 0 px;
         box-sizing: content-box;
         background: black;
+        border-color: grey;
     }
 
     div .result {
