@@ -1,6 +1,6 @@
 "use strict;"
-// window.location.href = "http://localhost:3000/?#search";
-// window.location.href = "https://hartjenstein.github.io/wiki_search_vanilla?#search";
+window.location.href = "http://localhost:3000/?#search";
+//window.location.href = "https://hartjenstein.github.io/wiki_search_vanilla?#search";
 function getResults(){
   //  window.location.href = "http://localhost:3000/?#search";
     $.ajax({
@@ -13,10 +13,10 @@ function getResults(){
             $("#content-box").html("");
            } 
             response[1].forEach((item, i) => {
-                let resultTitle = '<div class="result"><div class="resultContent align-middle"><h2>' + item + '</h2>';
+                let resultTitleAndLink = '<div class="result"><a class="resultLink" href="' + response[3][i] + '" target="_blank"><div class="resultContent align-middle"><h2>' + item + '</h2>';
                 let resultSummary =  '<p class="resultText">' + response[2][i] + '</p></div>';
-                let resultLink =  '<a class="resultLink" href="' + response[3][i] + '" target="_blank"></a></a></div>';
-                let result = resultTitle + resultSummary + resultLink
+                let resultLinkClose =  '</a></div>';
+                let result = resultTitleAndLink + resultSummary + resultLinkClose
                 $("#content-box").append(result); 
             });
       
