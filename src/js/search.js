@@ -1,5 +1,5 @@
 "use strict;"
-window.location.href = "http://localhost:3000/?#search";
+window.location.href = "https://hartjenstein.github/wiki_search_vanilla-search/?#search";
 //window.location.href = "https://hartjenstein.github.io/wiki_search_vanilla?#search";
 function getResults(){
   //  window.location.href = "http://localhost:3000/?#search";
